@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3lW-XR-4Bx">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote Cat Breed View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoteCatBreedViewController" customModule="the_ultimate_cat_breed_Battle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2c-kM-oB5">
+                                <rect key="frame" x="20" y="88" width="388" height="375"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6la-gv-IK0">
+                                <rect key="frame" x="0.0" y="463" width="428" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="AAV-H2-AKZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="dUS-Es-JPU">
+                                <rect key="frame" x="30" y="577" width="368" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVo-3e-ynX">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="60"/>
+                                        <color key="backgroundColor" red="0.023529411764705882" green="0.49019607843137253" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                        <state key="normal" title="Me gusta">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapLikeCatBreed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJW-zy-ir8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51A-iL-Ymg">
+                                        <rect key="frame" x="247.66666666666671" y="0.0" width="120.33333333333334" height="60"/>
+                                        <color key="backgroundColor" red="0.9694926143" green="0.32892549040000002" blue="0.18200322990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                        <state key="normal" title="No me gusta">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapLikeCatBreed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uVK-UQ-bmz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MS0-TK-96F"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ST-BM-45Q">
+                                <rect key="frame" x="278" y="842" width="120" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="3zw-Ju-Drt"/>
+                                    <constraint firstAttribute="height" constant="35" id="SNS-Vi-0TQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <state key="normal" title="breedsList">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapBreedsList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itg-XK-noP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="759-ct-Fa3">
+                                <rect key="frame" x="30" y="842" width="120" height="35"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Qei-3y-BsG"/>
+                                    <constraint firstAttribute="height" constant="35" id="lZo-dx-N5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <state key="normal" title="Voting Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapVotingRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jy-rc-bs7"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="HTf-J3-L7z">
+                                <rect key="frame" x="197" y="512" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6la-gv-IK0" firstAttribute="top" secondItem="h2c-kM-oB5" secondAttribute="bottom" id="1DO-Q1-hXL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ST-BM-45Q" secondAttribute="trailing" constant="30" id="3Bk-om-PwN">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="h2c-kM-oB5" secondAttribute="bottom" multiplier="2:1" id="9z1-hP-KC2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2c-kM-oB5" secondAttribute="trailing" constant="20" id="DjU-RW-qsC"/>
+                            <constraint firstItem="759-ct-Fa3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="I4R-U5-S3C"/>
+                            <constraint firstItem="h2c-kM-oB5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OJg-IU-Dga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4ST-BM-45Q" secondAttribute="bottom" constant="15" id="Ok7-rN-nhk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6la-gv-IK0" secondAttribute="trailing" id="QH7-Bn-xQX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dUS-Es-JPU" secondAttribute="bottom" multiplier="7:5" id="UjU-Jn-TQS"/>
+                            <constraint firstItem="h2c-kM-oB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YK6-qy-wu6"/>
+                            <constraint firstItem="4ST-BM-45Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="759-ct-Fa3" secondAttribute="trailing" constant="8" symbolic="YES" id="d92-tR-lKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="759-ct-Fa3" secondAttribute="bottom" constant="15" id="eNb-64-4p7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dUS-Es-JPU" secondAttribute="trailing" constant="30" id="eqM-vx-HfV"/>
+                            <constraint firstItem="6la-gv-IK0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nPH-OD-vh5"/>
+                            <constraint firstItem="dUS-Es-JPU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="t3f-p0-QfN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IGT-9n-6e4"/>
+                    <connections>
+                        <outlet property="catBreedImage" destination="h2c-kM-oB5" id="ZHA-6a-ygE"/>
+                        <outlet property="catBreedName" destination="6la-gv-IK0" id="UPa-cW-OdD"/>
+                        <outlet property="loading" destination="HTf-J3-L7z" id="f7Y-WY-mBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Breed List View Controller-->
+        <scene sceneID="r3c-xl-ehV">
+            <objects>
+                <viewController storyboardIdentifier="BreedListVC" id="4mh-J4-FAF" customClass="BreedListViewController" customModule="the_ultimate_cat_breed_Battle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c95-Dp-Qcw">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4dl-TX-zIw">
+                                <rect key="frame" x="0.0" y="104" width="428" height="718"/>
+                            </tableView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-XX-qEG">
+                                <rect key="frame" x="20" y="830" width="388" height="57"/>
+                                <color key="backgroundColor" red="0.59884047510000005" green="0.59892958399999996" blue="0.61757189040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                <state key="normal" title="← Go Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapGoBackToVote:" destination="4mh-J4-FAF" eventType="touchUpInside" id="DdY-es-XOj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breeds List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHz-a2-aOF">
+                                <rect key="frame" x="20" y="49" width="388" height="50"/>
+                                <color key="backgroundColor" red="0.59884047510000005" green="0.59892958399999996" blue="0.61757189040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QBU-9Z-zgT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KHz-a2-aOF" firstAttribute="top" secondItem="QBU-9Z-zgT" secondAttribute="top" constant="5" id="ADx-Ed-8h5"/>
+                            <constraint firstItem="QBU-9Z-zgT" firstAttribute="trailing" secondItem="7Rv-XX-qEG" secondAttribute="trailing" constant="20" id="TwC-tA-ukC"/>
+                            <constraint firstItem="4dl-TX-zIw" firstAttribute="top" secondItem="QBU-9Z-zgT" secondAttribute="top" constant="60" id="VAa-yC-MZJ"/>
+                            <constraint firstItem="7Rv-XX-qEG" firstAttribute="top" secondItem="4dl-TX-zIw" secondAttribute="bottom" constant="8" symbolic="YES" id="ZFZ-qf-9sU"/>
+                            <constraint firstItem="7Rv-XX-qEG" firstAttribute="leading" secondItem="QBU-9Z-zgT" secondAttribute="leading" constant="20" id="cug-fO-7eF"/>
+                            <constraint firstItem="QBU-9Z-zgT" firstAttribute="trailing" secondItem="4dl-TX-zIw" secondAttribute="trailing" id="dEm-f5-kSK"/>
+                            <constraint firstItem="4dl-TX-zIw" firstAttribute="leading" secondItem="QBU-9Z-zgT" secondAttribute="leading" id="hOk-1V-waf"/>
+                            <constraint firstItem="KHz-a2-aOF" firstAttribute="leading" secondItem="QBU-9Z-zgT" secondAttribute="leading" constant="20" id="lxi-Bu-fvE"/>
+                            <constraint firstItem="4dl-TX-zIw" firstAttribute="top" secondItem="KHz-a2-aOF" secondAttribute="bottom" constant="5" id="n89-zc-Prb"/>
+                            <constraint firstItem="7Rv-XX-qEG" firstAttribute="bottom" secondItem="QBU-9Z-zgT" secondAttribute="bottom" constant="-5" id="t2d-g0-KUI"/>
+                            <constraint firstItem="QBU-9Z-zgT" firstAttribute="bottom" secondItem="4dl-TX-zIw" secondAttribute="bottom" constant="70" id="tn8-6j-O1f"/>
+                            <constraint firstItem="QBU-9Z-zgT" firstAttribute="trailing" secondItem="KHz-a2-aOF" secondAttribute="trailing" constant="20" id="uqV-aJ-ONY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breedListTableView" destination="4dl-TX-zIw" id="72a-lN-oz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBN-AW-99h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.057971014493" y="114.50892857142857"/>
+        </scene>
+        <!--Voting Record View Controller-->
+        <scene sceneID="RjR-uP-IKa">
+            <objects>
+                <viewController storyboardIdentifier="VotingRecordVC" id="LoS-22-inl" customClass="VotingRecordViewController" customModule="the_ultimate_cat_breed_Battle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="42e-mu-hv8">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tml-RL-Urw">
+                                <rect key="frame" x="20" y="44" width="388" height="848"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VotingRecord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwK-nh-ijI">
+                                        <rect key="frame" x="10" y="5" width="368" height="37.666666666666664"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-cU-OWs">
+                                        <rect key="frame" x="10" y="50.666666666666686" width="368" height="737.33333333333326"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6X-mV-lH7">
+                                        <rect key="frame" x="10" y="798" width="368" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YDb-T7-11N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                        <state key="normal" title="← Go Back">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapGoBack:" destination="LoS-22-inl" eventType="touchUpInside" id="uJt-kr-XiA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="MwK-nh-ijI" firstAttribute="leading" secondItem="tml-RL-Urw" secondAttribute="leading" constant="10" id="6wg-aR-4JB"/>
+                                    <constraint firstAttribute="bottom" secondItem="f6X-mV-lH7" secondAttribute="bottom" constant="10" id="CR3-FV-CKC"/>
+                                    <constraint firstItem="f6X-mV-lH7" firstAttribute="top" secondItem="dXD-cU-OWs" secondAttribute="bottom" constant="10" id="HsF-Ta-uFV"/>
+                                    <constraint firstAttribute="trailing" secondItem="MwK-nh-ijI" secondAttribute="trailing" constant="10" id="Ioj-vp-t9P"/>
+                                    <constraint firstItem="dXD-cU-OWs" firstAttribute="top" secondItem="MwK-nh-ijI" secondAttribute="bottom" constant="8" symbolic="YES" id="Os7-4c-0ub"/>
+                                    <constraint firstItem="MwK-nh-ijI" firstAttribute="top" secondItem="tml-RL-Urw" secondAttribute="top" constant="5" id="cRh-o9-WHX"/>
+                                    <constraint firstItem="dXD-cU-OWs" firstAttribute="leading" secondItem="tml-RL-Urw" secondAttribute="leading" constant="10" id="hJA-GJ-Wf6"/>
+                                    <constraint firstItem="f6X-mV-lH7" firstAttribute="leading" secondItem="tml-RL-Urw" secondAttribute="leading" constant="10" id="q1d-6G-FDr"/>
+                                    <constraint firstAttribute="trailing" secondItem="dXD-cU-OWs" secondAttribute="trailing" constant="10" id="xy0-jN-5bz"/>
+                                    <constraint firstAttribute="trailing" secondItem="f6X-mV-lH7" secondAttribute="trailing" constant="10" id="yFj-9x-zVM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bof-hc-ZS5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tml-RL-Urw" firstAttribute="leading" secondItem="Bof-hc-ZS5" secondAttribute="leading" constant="20" id="2Jp-ey-cBQ"/>
+                            <constraint firstItem="tml-RL-Urw" firstAttribute="top" secondItem="Bof-hc-ZS5" secondAttribute="top" id="Kdc-5L-Kmi"/>
+                            <constraint firstItem="Bof-hc-ZS5" firstAttribute="trailing" secondItem="tml-RL-Urw" secondAttribute="trailing" constant="20" id="qTO-Ay-qpJ"/>
+                            <constraint firstItem="Bof-hc-ZS5" firstAttribute="bottom" secondItem="tml-RL-Urw" secondAttribute="bottom" id="rvK-Hf-XNp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="votingRecordTableView" destination="dXD-cU-OWs" id="J2b-YT-Snf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXY-eC-U0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="788"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RnD-M4-qGB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3lW-XR-4Bx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0eq-Wy-e8W">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="T9M-2j-0G9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uf-aN-FLU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+        <!--Breed Description View Controller-->
+        <scene sceneID="APa-0N-2Sk">
+            <objects>
+                <viewController storyboardIdentifier="BreedDescriptionVC" id="cnH-cx-KqP" customClass="BreedDescriptionViewController" customModule="the_ultimate_cat_breed_Battle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0P-h0-mrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAh-Qj-pVd">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twr-qL-j7d">
+                                        <rect key="frame" x="10" y="5" width="408" height="40"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPe-8n-aH2">
+                                        <rect key="frame" x="10" y="798" width="408" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FMO-8I-Cvo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                        <state key="normal" title="← Go Back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapGoBack:" destination="cnH-cx-KqP" eventType="touchUpInside" id="c4x-ES-NUY"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vCz-88-pG5">
+                                        <rect key="frame" x="5" y="50" width="418" height="346.66666666666669"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4O-Hx-cqZ">
+                                        <rect key="frame" x="5" y="401.66666666666669" width="418" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4jL-7E-vP2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvx-N4-6qK">
+                                        <rect key="frame" x="5" y="426.66666666666669" width="418" height="178.33333333333331"/>
+                                        <string key="text">The Chantilly is a devoted companion and prefers company to being left alone. While the Chantilly is not demanding, she will \"chirp\" and \"talk\" as if having a conversation. This breed is affectionate, with a sweet temperament. It can stay still for extended periods, happily lounging in the lap of its loved one. This quality makes the Tiffany an ideal traveling companion, and an ideal house companion for senior citizens and the physically handicapped</string>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yvx-N4-6qK" secondAttribute="trailing" constant="5" id="6fY-kQ-Ejs"/>
+                                    <constraint firstAttribute="trailing" secondItem="vCz-88-pG5" secondAttribute="trailing" constant="5" id="Huu-50-gZZ"/>
+                                    <constraint firstItem="twr-qL-j7d" firstAttribute="top" secondItem="UAh-Qj-pVd" secondAttribute="top" constant="5" id="MXG-px-wok"/>
+                                    <constraint firstItem="vCz-88-pG5" firstAttribute="top" secondItem="twr-qL-j7d" secondAttribute="bottom" constant="5" id="MjC-Yj-SDA"/>
+                                    <constraint firstItem="yvx-N4-6qK" firstAttribute="top" secondItem="f4O-Hx-cqZ" secondAttribute="bottom" constant="5" id="MsB-6z-5wX"/>
+                                    <constraint firstItem="vCz-88-pG5" firstAttribute="leading" secondItem="UAh-Qj-pVd" secondAttribute="leading" constant="5" id="ODE-eC-2wZ"/>
+                                    <constraint firstItem="yvx-N4-6qK" firstAttribute="leading" secondItem="UAh-Qj-pVd" secondAttribute="leading" constant="5" id="eII-ar-2lZ"/>
+                                    <constraint firstItem="f4O-Hx-cqZ" firstAttribute="leading" secondItem="UAh-Qj-pVd" secondAttribute="leading" constant="5" id="efo-aH-z5p"/>
+                                    <constraint firstItem="f4O-Hx-cqZ" firstAttribute="top" secondItem="vCz-88-pG5" secondAttribute="bottom" constant="5" id="g8y-62-49d"/>
+                                    <constraint firstAttribute="trailing" secondItem="twr-qL-j7d" secondAttribute="trailing" constant="10" id="hpH-h5-6gL"/>
+                                    <constraint firstItem="twr-qL-j7d" firstAttribute="leading" secondItem="UAh-Qj-pVd" secondAttribute="leading" constant="10" id="j4P-Js-aa0"/>
+                                    <constraint firstAttribute="trailing" secondItem="YPe-8n-aH2" secondAttribute="trailing" constant="10" id="jrn-4l-vy6"/>
+                                    <constraint firstAttribute="bottom" secondItem="YPe-8n-aH2" secondAttribute="bottom" constant="10" id="kAX-Lr-uXR"/>
+                                    <constraint firstAttribute="trailing" secondItem="f4O-Hx-cqZ" secondAttribute="trailing" constant="5" id="oEY-w6-67g"/>
+                                    <constraint firstItem="YPe-8n-aH2" firstAttribute="top" secondItem="vCz-88-pG5" secondAttribute="bottom" multiplier="10:5" constant="5" id="qC7-hO-zEX"/>
+                                    <constraint firstItem="YPe-8n-aH2" firstAttribute="leading" secondItem="UAh-Qj-pVd" secondAttribute="leading" constant="10" id="t4L-pE-CgQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qsh-A8-kXx"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qsh-A8-kXx" firstAttribute="bottom" secondItem="UAh-Qj-pVd" secondAttribute="bottom" id="9k7-d0-CyE"/>
+                            <constraint firstItem="UAh-Qj-pVd" firstAttribute="top" secondItem="Qsh-A8-kXx" secondAttribute="top" id="VlE-Rd-xpS"/>
+                            <constraint firstItem="UAh-Qj-pVd" firstAttribute="leading" secondItem="Qsh-A8-kXx" secondAttribute="leading" id="dqP-Rx-81o"/>
+                            <constraint firstItem="Qsh-A8-kXx" firstAttribute="trailing" secondItem="UAh-Qj-pVd" secondAttribute="trailing" id="q23-1s-vbp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breedDescription" destination="yvx-N4-6qK" id="ZtI-PD-qe3"/>
+                        <outlet property="breedImage" destination="vCz-88-pG5" id="A68-HS-gtp"/>
+                        <outlet property="breedName" destination="twr-qL-j7d" id="EuM-Zb-4XK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4P-UM-cU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2557.971014492754" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

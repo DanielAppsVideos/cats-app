@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50575D9A26F5999B002258CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50575D9926F5999B002258CE /* AppDelegate.swift */; };
+		50575D9C26F5999B002258CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50575D9B26F5999B002258CE /* SceneDelegate.swift */; };
+		50575D9E26F5999B002258CE /* VoteCatBreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50575D9D26F5999B002258CE /* VoteCatBreedViewController.swift */; };
+		50575DA126F5999B002258CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50575D9F26F5999B002258CE /* Main.storyboard */; };
+		50575DA326F5999C002258CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50575DA226F5999C002258CE /* Assets.xcassets */; };
+		50575DA626F5999C002258CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50575DA426F5999C002258CE /* LaunchScreen.storyboard */; };
+		50575DB526F5ADE8002258CE /* BreedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50575DB426F5ADE8002258CE /* BreedListViewController.swift */; };
+		50761FAA26F7A7BE009DCD58 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 50761FA926F7A7BE009DCD58 /* Kingfisher */; };
+		5076A72A26F6F42C00C3FCA4 /* BreedDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076A72826F6F42C00C3FCA4 /* BreedDescriptionViewController.swift */; };
+		5076A72B26F6F42C00C3FCA4 /* BreedDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5076A72926F6F42C00C3FCA4 /* BreedDescriptionViewController.xib */; };
+		5093278326F613DB00D8AF27 /* VotingRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093278226F613DB00D8AF27 /* VotingRecordViewController.swift */; };
+		5093278726F61A2600D8AF27 /* BreedListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093278526F61A2600D8AF27 /* BreedListTableViewCell.swift */; };
+		5093278826F61A2600D8AF27 /* BreedListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5093278626F61A2600D8AF27 /* BreedListTableViewCell.xib */; };
+		5093278C26F6219600D8AF27 /* VotingRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093278A26F6219600D8AF27 /* VotingRecordTableViewCell.swift */; };
+		5093278D26F6219600D8AF27 /* VotingRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5093278B26F6219600D8AF27 /* VotingRecordTableViewCell.xib */; };
+		5093279126F624F100D8AF27 /* CatBreedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093279026F624F100D8AF27 /* CatBreedDataService.swift */; };
+		5093279426F62AB100D8AF27 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093279326F62AB100D8AF27 /* CatBreed.swift */; };
+		5093279726F6338B00D8AF27 /* CatBreedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093279626F6338B00D8AF27 /* CatBreedPresenter.swift */; };
+		5093279A26F63AC600D8AF27 /* CatBreedUIConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093279926F63AC600D8AF27 /* CatBreedUIConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50575D9626F5999B002258CE /* the_ultimate_cat_breed_Battle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = the_ultimate_cat_breed_Battle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50575D9926F5999B002258CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50575D9B26F5999B002258CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50575D9D26F5999B002258CE /* VoteCatBreedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteCatBreedViewController.swift; sourceTree = "<group>"; };
+		50575DA026F5999B002258CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50575DA226F5999C002258CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50575DA526F5999C002258CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50575DA726F5999C002258CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50575DB426F5ADE8002258CE /* BreedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewController.swift; sourceTree = "<group>"; };
+		5076A72826F6F42C00C3FCA4 /* BreedDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDescriptionViewController.swift; sourceTree = "<group>"; };
+		5076A72926F6F42C00C3FCA4 /* BreedDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedDescriptionViewController.xib; sourceTree = "<group>"; };
+		5093278226F613DB00D8AF27 /* VotingRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingRecordViewController.swift; sourceTree = "<group>"; };
+		5093278526F61A2600D8AF27 /* BreedListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListTableViewCell.swift; sourceTree = "<group>"; };
+		5093278626F61A2600D8AF27 /* BreedListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedListTableViewCell.xib; sourceTree = "<group>"; };
+		5093278A26F6219600D8AF27 /* VotingRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingRecordTableViewCell.swift; sourceTree = "<group>"; };
+		5093278B26F6219600D8AF27 /* VotingRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VotingRecordTableViewCell.xib; sourceTree = "<group>"; };
+		5093279026F624F100D8AF27 /* CatBreedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDataService.swift; sourceTree = "<group>"; };
+		5093279326F62AB100D8AF27 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
+		5093279626F6338B00D8AF27 /* CatBreedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedPresenter.swift; sourceTree = "<group>"; };
+		5093279926F63AC600D8AF27 /* CatBreedUIConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedUIConverter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50575D9326F5999B002258CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50761FAA26F7A7BE009DCD58 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50575D8D26F5999B002258CE = {
+			isa = PBXGroup;
+			children = (
+				50575D9826F5999B002258CE /* the_ultimate_cat_breed_Battle */,
+				50575D9726F5999B002258CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50575D9726F5999B002258CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50575D9626F5999B002258CE /* the_ultimate_cat_breed_Battle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50575D9826F5999B002258CE /* the_ultimate_cat_breed_Battle */ = {
+			isa = PBXGroup;
+			children = (
+				50575DB026F59AC0002258CE /* Bussines logic */,
+				50575DAF26F59AAC002258CE /* DataService */,
+				50575DAE26F59A8A002258CE /* Presentation */,
+				50575D9926F5999B002258CE /* AppDelegate.swift */,
+				50575D9B26F5999B002258CE /* SceneDelegate.swift */,
+				50575D9D26F5999B002258CE /* VoteCatBreedViewController.swift */,
+				50575D9F26F5999B002258CE /* Main.storyboard */,
+				50575DA226F5999C002258CE /* Assets.xcassets */,
+				50575DA426F5999C002258CE /* LaunchScreen.storyboard */,
+				50575DA726F5999C002258CE /* Info.plist */,
+			);
+			path = the_ultimate_cat_breed_Battle;
+			sourceTree = "<group>";
+		};
+		50575DAE26F59A8A002258CE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5076A72326F6DA8800C3FCA4 /* BreedVoterViewController */,
+				50575DB326F5AD92002258CE /* Views */,
+				5093279626F6338B00D8AF27 /* CatBreedPresenter.swift */,
+				5093279926F63AC600D8AF27 /* CatBreedUIConverter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		50575DAF26F59AAC002258CE /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				5093279026F624F100D8AF27 /* CatBreedDataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		50575DB026F59AC0002258CE /* Bussines logic */ = {
+			isa = PBXGroup;
+			children = (
+				5093279326F62AB100D8AF27 /* CatBreed.swift */,
+			);
+			path = "Bussines logic";
+			sourceTree = "<group>";
+		};
+		50575DB326F5AD92002258CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5076A72626F6F3D000C3FCA4 /* VotingRecordView */,
+				5089DA9926F699E2002E16A9 /* BreedListView */,
+				5076A72826F6F42C00C3FCA4 /* BreedDescriptionViewController.swift */,
+				5076A72926F6F42C00C3FCA4 /* BreedDescriptionViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5076A72326F6DA8800C3FCA4 /* BreedVoterViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BreedVoterViewController;
+			sourceTree = "<group>";
+		};
+		5076A72626F6F3D000C3FCA4 /* VotingRecordView */ = {
+			isa = PBXGroup;
+			children = (
+				5093278A26F6219600D8AF27 /* VotingRecordTableViewCell.swift */,
+				5093278B26F6219600D8AF27 /* VotingRecordTableViewCell.xib */,
+				5093278226F613DB00D8AF27 /* VotingRecordViewController.swift */,
+			);
+			path = VotingRecordView;
+			sourceTree = "<group>";
+		};
+		5089DA9926F699E2002E16A9 /* BreedListView */ = {
+			isa = PBXGroup;
+			children = (
+				5093278626F61A2600D8AF27 /* BreedListTableViewCell.xib */,
+				5093278526F61A2600D8AF27 /* BreedListTableViewCell.swift */,
+				50575DB426F5ADE8002258CE /* BreedListViewController.swift */,
+			);
+			path = BreedListView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50575D9526F5999B002258CE /* the_ultimate_cat_breed_Battle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50575DAA26F5999C002258CE /* Build configuration list for PBXNativeTarget "the_ultimate_cat_breed_Battle" */;
+			buildPhases = (
+				50575D9226F5999B002258CE /* Sources */,
+				50575D9326F5999B002258CE /* Frameworks */,
+				50575D9426F5999B002258CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = the_ultimate_cat_breed_Battle;
+			packageProductDependencies = (
+				50761FA926F7A7BE009DCD58 /* Kingfisher */,
+			);
+			productName = the_ultimate_cat_breed_Battle;
+			productReference = 50575D9626F5999B002258CE /* the_ultimate_cat_breed_Battle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50575D8E26F5999B002258CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					50575D9526F5999B002258CE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 50575D9126F5999B002258CE /* Build configuration list for PBXProject "the_ultimate_cat_breed_Battle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50575D8D26F5999B002258CE;
+			packageReferences = (
+				50761FA826F7A7BE009DCD58 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 50575D9726F5999B002258CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50575D9526F5999B002258CE /* the_ultimate_cat_breed_Battle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50575D9426F5999B002258CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5093278826F61A2600D8AF27 /* BreedListTableViewCell.xib in Resources */,
+				50575DA626F5999C002258CE /* LaunchScreen.storyboard in Resources */,
+				50575DA326F5999C002258CE /* Assets.xcassets in Resources */,
+				50575DA126F5999B002258CE /* Main.storyboard in Resources */,
+				5076A72B26F6F42C00C3FCA4 /* BreedDescriptionViewController.xib in Resources */,
+				5093278D26F6219600D8AF27 /* VotingRecordTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50575D9226F5999B002258CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076A72A26F6F42C00C3FCA4 /* BreedDescriptionViewController.swift in Sources */,
+				5093278726F61A2600D8AF27 /* BreedListTableViewCell.swift in Sources */,
+				5093279126F624F100D8AF27 /* CatBreedDataService.swift in Sources */,
+				5093279A26F63AC600D8AF27 /* CatBreedUIConverter.swift in Sources */,
+				50575DB526F5ADE8002258CE /* BreedListViewController.swift in Sources */,
+				50575D9E26F5999B002258CE /* VoteCatBreedViewController.swift in Sources */,
+				50575D9A26F5999B002258CE /* AppDelegate.swift in Sources */,
+				5093278C26F6219600D8AF27 /* VotingRecordTableViewCell.swift in Sources */,
+				5093279426F62AB100D8AF27 /* CatBreed.swift in Sources */,
+				5093278326F613DB00D8AF27 /* VotingRecordViewController.swift in Sources */,
+				5093279726F6338B00D8AF27 /* CatBreedPresenter.swift in Sources */,
+				50575D9C26F5999B002258CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50575D9F26F5999B002258CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50575DA026F5999B002258CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50575DA426F5999C002258CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50575DA526F5999C002258CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50575DA826F5999C002258CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50575DA926F5999C002258CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50575DAB26F5999C002258CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = the_ultimate_cat_breed_Battle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guitsmstr.the-ultimate-cat-breed-Battle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50575DAC26F5999C002258CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = the_ultimate_cat_breed_Battle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guitsmstr.the-ultimate-cat-breed-Battle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50575D9126F5999B002258CE /* Build configuration list for PBXProject "the_ultimate_cat_breed_Battle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50575DA826F5999C002258CE /* Debug */,
+				50575DA926F5999C002258CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50575DAA26F5999C002258CE /* Build configuration list for PBXNativeTarget "the_ultimate_cat_breed_Battle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50575DAB26F5999C002258CE /* Debug */,
+				50575DAC26F5999C002258CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50761FA826F7A7BE009DCD58 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50761FA926F7A7BE009DCD58 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50761FA826F7A7BE009DCD58 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 50575D8E26F5999B002258CE /* Project object */;
+}
